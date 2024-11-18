@@ -7,3 +7,13 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+const legoSet = {
+  suggestedAge: 13,
+  noPieces: 543,
+  noOfFigs: 4,
+  bags: {
+    noOfBags: 4,
+    bagMat: "Plastic",
+  },
+};
