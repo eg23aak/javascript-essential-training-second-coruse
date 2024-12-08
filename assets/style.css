@@ -103,6 +103,10 @@ figure {
 .backpack__features li {
   padding: 0.2rem 0;
 }
+figure img {
+  margin: auto 0;
+  width: 200px;
+}
 
 /* Subgrid. See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid */
 @supports (grid-template-columns: subgrid) {

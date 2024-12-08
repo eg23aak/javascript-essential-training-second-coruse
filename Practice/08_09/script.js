@@ -57,3 +57,24 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const createFigure = function (backpack) {
+  const figImg = document.createElement("figure");
+
+  const figureContent = `<img src="${backpack.image}" alt="${backpack.name}"/><figcaption>${backpack.name}</figcaption>`;
+
+  figImg.innerHTML = figureContent;
+  return figImg;
+};
+
+const templateArticle = function (backpack, content) {
+  const parentContainer = document.querySelector("main");
+  const backpackArticle = document.createElement("article");
+
+  backpackArticle.innerHTML = content;
+  parentContainer.append(backpackArticle);
+  let figImg = createFigure(frogpack);
+  parentContainer.append(figImg);
+};
+
+templateArticle(frogpack, content);
